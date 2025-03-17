@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f89a7d88ef1b1f562bb432c4576e5940 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f89a7d88ef1b1f562bb432c4576e5940" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f89a7d88ef1b1f562bb432c4576e5940 = L.map(
+                "map_f89a7d88ef1b1f562bb432c4576e5940",
+                {
+                    center: [4.646233161704116, -73.86709589859971],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 20,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e7e78c0fb80b79c325d5a9819485dc30 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_e7e78c0fb80b79c325d5a9819485dc30.addTo(map_f89a7d88ef1b1f562bb432c4576e5940);
+        
+    
+            var polygon_a8c64215f21d1c9735f4259fb61b63d6 = L.polygon(
+                [[4.646393039217196, -73.86735430961042], [4.646379383315382, -73.86685511622223], [4.646045577125313, -73.86686799878882], [4.646114647158574, -73.8673061697774]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_f89a7d88ef1b1f562bb432c4576e5940);
+        
+    
+        var popup_b0aaf74f6176f7d284cf8a062f8e6e78 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_be09a3cbf9c7e7fd6650b44523879664 = $(`<div id="html_be09a3cbf9c7e7fd6650b44523879664" style="width: 100.0%; height: 100.0%;">Zona Pesquera</div>`)[0];
+                popup_b0aaf74f6176f7d284cf8a062f8e6e78.setContent(html_be09a3cbf9c7e7fd6650b44523879664);
+            
+        
+
+        polygon_a8c64215f21d1c9735f4259fb61b63d6.bindPopup(popup_b0aaf74f6176f7d284cf8a062f8e6e78)
+        ;
+
+        
+    
+</script>
+</html>
